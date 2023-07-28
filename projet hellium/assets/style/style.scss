@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(26, 25, 25);
+    color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+    margin: 30px 20px;
+    font-size: 2rem;
+    }
+    ul {
+        display: flex;
+    }
+    li {
+        list-style: none;
+        margin: 30px 80px;
+        font-size: 1.2rem;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+header {
+    display: flex;
+    
+}
+
+.header-left {
+    width: 50%;
+}
+
+.header-left-container {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 20px;
+    h1{
+        font-size: 5.2rem;
+    }
+    h3 {
+        margin: 20px 0 30px 0;
+        font-size: 2rem;
+        color: rgb(58, 58, 255);
+    }
+}
+
+.header-right {
+    width: 50%;
+    img {
+        margin: 15px 20px 0 0;
+        height: 500px;
+    }
+}
+
+.info {
+    margin: 10px;
+    height: 180px;
+    display: flex;
+    background: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    
+    .info-left {
+        width: 40%;
+        h3 {
+            margin: 15px 0 0 16px;
+        }
+    
+        .btn-container {
+            margin: 10px 50px 0 0;
+            display: flex;
+            flex-direction: column;
+            button {
+                width: 130px;
+                height: 30px;
+                margin: 5px 0 3px 18px;
+                border-radius: 10px;
+                background: rgb(65, 65, 219);
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .info-right {
+        h3 {
+            margin: 15px;
+        }
+        .investisors {
+            display: flex;
+            justify-content: start;
+        }
+        .img-container {
+            img {
+                margin: 15px 25px 0 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #modempic {
+        height: 400px;
+    }
+    #info-img {
+        height: 28px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .nav {
+        justify-content: start;
+    }
+    .header-left-container {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+    .header-right {
+        img {
+            margin: 60px 5px 0 0;
+        }
+    }
+    #modempic {
+        height: 200px;
+    }
+    #info-img {
+        margin: 50px 0 0 50px;
+        height: 10px;
+    }
+}
