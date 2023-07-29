@@ -140,10 +140,8 @@ header {
   }
 }
 @media only screen and (max-width: 900px) {
-  .nav {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+  nav li {
+    margin: 30px 20px;
   }
   .header-left-container h1 {
     font-size: 3.5rem;

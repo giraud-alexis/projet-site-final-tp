@@ -123,8 +123,10 @@ header {
 }
 
 @media only screen and (max-width: 900px) {
-    .nav {
-        justify-content: start;
+    nav {
+        li {
+            margin: 30px 20px;
+        }
     }
     .header-left-container {
         h1 {
