@@ -1,23 +1,21 @@
-const blocContainer = document.querySelector(".click-event");
-const mousemove = document.querySelector(".mousemove");
+const mouses = document.querySelectorAll(".mouse");
 
 window.addEventListener("mousemove", (e) => {
-  mousemove.style.left = e.pageX + "px";
-  mousemove.style.top = e.pageY + "px";
+  mouses.forEach((mouse) => {
+    mouse.style.top = e.y + "px";
+    mouse.style.left = e.x + "px";
+  });
 });
 
-window.addEventListener("mousedown", () => {
-  mousemove.style.transform = "scale(2) translate(-25%,-25%)";
-});
+//-----------------2eme facon-----------//
 
-window.addEventListener("mouseup", () => {
-  mousemove.style.transform = "scale(1) translate(-50%,-50%)";
-});
-
-blocContainer.addEventListener("mouseenter", () => {
-  blocContainer.style.background = "rgba(0,0,0,0.6)";
-});
-
-blocContainer.addEventListener("mouseout", () => {
-  blocContainer.style.background = "cyan";
-});
+//window.addEventListener("mouse", (e) => {
+//  cursor.style.top = e.y + "px";
+//  cursor.style.left = e.x + "px";
+//
+//  mouse1.style.top = e.y + "px";
+//  mouse1.style.left = e.x + "px";
+//
+//  mouse2.style.top = e.y + "px";
+//  mouse2.style.left = e.x + "px";
+//});

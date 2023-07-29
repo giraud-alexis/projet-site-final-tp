@@ -9,32 +9,34 @@ body {
   color: whitesmoke;
 }
 
-.mousemove {
-  height: 70px;
-  width: 70px;
-  mix-blend-mode: difference;
-  background: rgb(214, 214, 214);
+.mouse {
   position: absolute;
+  border-radius: 1500px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  border-radius: 50px;
-  -webkit-transition: 0.1s ease;
-  transition: 0.1s ease;
-  z-index: 0;
+  mix-blend-mode: difference;
 }
 
-.mousemove::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
-  background: blue;
-  border-radius: 50%;
-  z-index: -1;
+#cursor {
+  background: #2128bd;
+  width: 14px;
+  height: 14px;
+}
+
+#mouse1 {
+  height: 60px;
+  width: 60px;
+  background: white;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+#mouse2 {
+  height: 150px;
+  width: 150px;
+  background: rgb(36, 35, 35);
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 nav {
@@ -62,6 +64,11 @@ nav li {
 nav a {
   color: white;
   text-decoration: none;
+}
+
+a {
+  z-index: 1000;
+  position: relative;
 }
 
 header {
