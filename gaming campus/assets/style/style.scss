@@ -135,7 +135,7 @@ header {
         }
 
         .right-part {
-            padding: 0 0 100px 0;
+            padding: 40px 0 100px 0;
 
             button {
                 background: transparent;
@@ -143,11 +143,81 @@ header {
                 margin: 25px 0 0 0;
                 height: 40px;
                 width: 200px;
+                font-size: 1.2rem;
+                font-weight: bold;
             }
         }
     }
 
     .main-news {
-        display: flex;
+        .main-news-container {
+            display: grid;
+            grid-template-columns: 35% 35% 35%;
+            h4 {
+                margin: 15px 0 0 0;
+                font-size: 1.2rem;
+            }
+            p {
+                margin: 15px 0 0 0;
+                font-weight: bold;
+            }
+            
+            .news-left {
+                margin: 0 0 0 270px;
+                text-align: center;
+                width: 255px;
+                .link {
+                    margin: 15px 0 0 0;
+                    font-size: large;
+                }
+            }
+            .news-center {
+                margin: 0 0 0 130px;
+                text-align: center;
+                width: 255px;
+                .link {
+                    margin: 90px 0 0 0;
+                    font-size: large;
+                }
+            }
+            .news-right {
+                text-align: center;
+                width: 255px;
+                .link {
+                    margin: 72px 0 0 0;
+                    font-size: large;
+                }
+            }
+        }
     }
 }
+.contact {
+    margin: 200px 0 0 0;
+    
+    .contact-list {
+        display: flex;
+        justify-content: center;
+        height: 400px;
+    }
+    .list {
+        margin: 20px 40px;
+        width: 200px;
+        h5 {
+            margin: 20px 0;
+            text-align: start;
+            font-size: 1.5rem;
+        }
+        h6 {
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        ul {
+            flex-direction: column;
+            width: 230px;
+            
+        }
+    }
+}
+

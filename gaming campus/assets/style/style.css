@@ -137,7 +137,7 @@ header .main-header button {
   font-weight: bold;
 }
 .news-part .header-news .right-part {
-  padding: 0 0 100px 0;
+  padding: 40px 0 100px 0;
 }
 .news-part .header-news .right-part button {
   background: transparent;
@@ -145,9 +145,79 @@ header .main-header button {
   margin: 25px 0 0 0;
   height: 40px;
   width: 200px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-.news-part .main-news {
+.news-part .main-news .main-news-container {
+  display: grid;
+  grid-template-columns: 35% 35% 35%;
+}
+.news-part .main-news .main-news-container h4 {
+  margin: 15px 0 0 0;
+  font-size: 1.2rem;
+}
+.news-part .main-news .main-news-container p {
+  margin: 15px 0 0 0;
+  font-weight: bold;
+}
+.news-part .main-news .main-news-container .news-left {
+  margin: 0 0 0 270px;
+  text-align: center;
+  width: 255px;
+}
+.news-part .main-news .main-news-container .news-left .link {
+  margin: 15px 0 0 0;
+  font-size: large;
+}
+.news-part .main-news .main-news-container .news-center {
+  margin: 0 0 0 130px;
+  text-align: center;
+  width: 255px;
+}
+.news-part .main-news .main-news-container .news-center .link {
+  margin: 90px 0 0 0;
+  font-size: large;
+}
+.news-part .main-news .main-news-container .news-right {
+  text-align: center;
+  width: 255px;
+}
+.news-part .main-news .main-news-container .news-right .link {
+  margin: 72px 0 0 0;
+  font-size: large;
+}
+
+.contact {
+  margin: 200px 0 0 0;
+}
+.contact .contact-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 400px;
+}
+.contact .list {
+  margin: 20px 40px;
+  width: 200px;
+}
+.contact .list h5 {
+  margin: 20px 0;
+  text-align: start;
+  font-size: 1.5rem;
+}
+.contact .list h6 {
+  font-size: 1.2rem;
+}
+.contact .list p {
+  font-size: 1.1rem;
+}
+.contact .list ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 230px;
 }/*# sourceMappingURL=style.css.map */
