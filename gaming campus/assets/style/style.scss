@@ -211,6 +211,7 @@ header {
             font-size: 1.2rem;
         }
         p {
+            font-weight: bold;
             font-size: 1.1rem;
         }
         ul {
@@ -218,6 +219,32 @@ header {
             width: 230px;
             
         }
+        #contact-img {
+            margin: 30px 0;
+        }
     }
 }
 
+.contact-medias {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    .medias-text {
+        margin: 0 100px 50px 40px;
+    }
+    .medias-logo {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: rgb(255, 255, 255);
+    h3 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
