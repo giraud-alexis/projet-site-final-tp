@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: rgb(241, 241, 241);
+  font-family: sans-serif;
+}
+
+button {
+  margin: 50px 0 0 50px;
+  height: 40px;
+  width: 150px;
+  border: 2px solid gray;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.run {
+  min-height: 800px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.run .run-left h1 {
+  margin: 250px 0 0 50px;
+  font-size: 3rem;
+  color: rgb(73, 73, 73);
+}
+.run .run-left p {
+  margin: 50px 0 0 50px;
+  font-size: 1.5rem;
+  color: rgb(73, 73, 73);
+}
+.run .run-right img {
+  height: 880px;
+  width: 897px;
+}
+
+.magna {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border-top: 3px solid rgb(219, 219, 219);
+}
+.magna .magna-left img {
+  height: 570px;
+  width: 670px;
+}
+.magna .magna-right h2 {
+  margin: 100px 0 0 50px;
+  font-size: 3rem;
+  color: rgb(73, 73, 73);
+}
+.magna .magna-right p {
+  margin: 50px 80px 0 50px;
+  font-size: 1.5rem;
+  color: rgb(73, 73, 73);
+}
+
+.tempus {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border-top: 3px solid rgb(219, 219, 219);
+}
+.tempus .tempus-left h3 {
+  margin: 200px 0 0 50px;
+  font-size: 3rem;
+  color: rgb(73, 73, 73);
+}
+.tempus .tempus-left p {
+  margin: 50px 0 0 50px;
+  font-size: 1.5rem;
+  color: rgb(73, 73, 73);
+}
+.tempus .tempus-right img {
+  margin: 0 0 0 150px;
+  height: 500px;
+  width: 550px;
+}
+
+.formulaire {
+  height: 700px;
+  text-align: center;
+}
+.formulaire h4 {
+  margin: 100px 0 50px 0;
+  font-size: 2rem;
+  color: rgb(73, 73, 73);
+}
+.formulaire .nope {
+  margin: 0 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.formulaire .nope .nom {
+  margin: 0 25px;
+  font-size: 1.4rem;
+  color: gray;
+}
+.formulaire .nope .mail {
+  margin: 0 25px;
+  font-size: 1.4rem;
+  color: gray;
+}
+.formulaire .nope input {
+  margin: 25px 0;
+  height: 40px;
+  width: 400px;
+  border: 2px solid gray;
+}
+.formulaire .text {
+  height: 300px;
+}/*# sourceMappingURL=style.css.map */

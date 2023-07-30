@@ -115,7 +115,8 @@ header {
 }
 
 .news-part {
-    margin: 100px 0 0 0;
+    background: rgb(226, 226, 226);
+    padding: 100px 0 0 0;
     
     .header-news {
         display: grid;
@@ -148,8 +149,9 @@ header {
             }
         }
     }
-
+    
     .main-news {
+        height: 600px;
         .main-news-container {
             display: grid;
             grid-template-columns: 35% 35% 35%;
@@ -217,7 +219,11 @@ header {
         ul {
             flex-direction: column;
             width: 230px;
+            padding: 0;
             
+        }
+        li {
+            padding: 0px;
         }
         #contact-img {
             margin: 30px 0;
